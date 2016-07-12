@@ -1,0 +1,97 @@
+<html>
+<body>
+	<section class="demo">
+		<div class="box">
+			<div class="leaf"></div>
+			<div class="leaf"></div>
+			<div class="leaf"></div>
+			<div class="leaf"></div>
+			<div class="leaf"></div>
+			<div class="leaf"></div>
+			<div class="leaf"></div>
+			<div class="leaf"></div>
+		</div>
+		</section>
+</body>
+<style>
+body{
+	background-color: #e6e6e6;
+}
+.demo {
+   margin: 40px auto;
+   width: 500px;
+}
+
+.box {
+   position: relative;
+   height: 400px;
+}
+
+.box .leaf {
+   position: absolute;
+}
+.leaf{
+   margin-top: 400px;
+   width: 300px;
+   height: 300px;
+   border-radius: 300px 0px;
+   background-color: white;
+   background: linear-gradient(45deg,  rgba(188,190,192,1) 8%,rgba(158,31,99,1) 30%,rgba(158,31,99,1) 100%);
+   opacity: 0.5;
+   filter:alpha(opacity=50);
+   transform: rotate(45deg);
+   transform-origin:  top right;
+}
+.leaf:nth-child(2){
+	animation: 2000ms bloome2 alternate linear;
+}
+.leaf:nth-child(3){
+	animation: 2000ms bloome3 alternate linear;
+}
+.leaf:nth-child(4){
+	animation: 2000ms bloome4 alternate linear;
+}
+.leaf:nth-child(5){
+	animation: 2000ms bloome5 alternate linear;
+}
+.leaf:nth-child(6){
+	animation: 2000ms bloome6 alternate linear;
+}
+.leaf:nth-child(7){
+	animation: 2000ms bloome7 alternate linear;
+}
+.leaf:nth-child(8){
+	animation: 2000ms bloome8 alternate linear;
+}
+
+@keyframes bloome2{
+	0%{transform: rotate(45deg);}
+	100%{transform: rotate(71deg);}
+}
+@keyframes bloome3{
+	0%{transform: rotate(45deg);}
+	100%{transform: rotate(96deg);}
+}
+@keyframes bloome4{
+	0%{transform: rotate(45deg);}
+	100%{transform: rotate(123deg);}
+}
+@keyframes bloome5{
+	0%{transform: rotate(45deg);}
+	100%{transform: rotate(149deg);}
+}
+@keyframes bloome6{
+	0%{transform: rotate(45deg);}
+	100%{transform: rotate(175deg);}
+}
+@keyframes bloome7{
+	0%{transform: rotate(45deg);}
+	100%{transform: rotate(200deg);}
+}
+@keyframes bloome8{
+	0%{transform: rotate(45deg);}
+	100%{transform: rotate(225deg);}
+}
+
+</style>
+</html>
